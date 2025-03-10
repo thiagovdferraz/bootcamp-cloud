@@ -1,1 +1,3 @@
-# bootcamp-cloud
+# Bootcamp Cloud
+
+Todas as subpastas possui um arquiv readme.
