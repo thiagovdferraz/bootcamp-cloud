@@ -253,6 +253,8 @@ Nesta seção, vamos aprender a configurar uma instância EC2, obter acesso root
 
    ```bash
    yum install python3-pip -y
+   python3 -m venv .venv
+   source .venv/bin/activate
    ```
 
 3. **Verificando a Instalação do `pip3`:**
