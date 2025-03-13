@@ -82,7 +82,7 @@ def executar_backup(pasta: str) -> None:
         raise
 
 if __name__ == "__main__":
-    PASTA_LOCAL: str = 'download'  # Substitua pelo caminho da sua pasta local
+    PASTA_LOCAL: str = 'arquivos'  # Substitua pelo caminho da sua pasta local
     try:
         executar_backup(PASTA_LOCAL)
     except Exception as e:

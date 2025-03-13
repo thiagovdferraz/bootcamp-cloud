@@ -1,0 +1,8 @@
+lembrar de adicionar permissão na politica do usuario IAM para ter acesso a todos os arquivos do bucket
+
+nome-do-bucket/*
+
+"Resource": [
+                "arn:aws:s3:::aula02-etl-backup-jornada-dados",
+                "arn:aws:s3:::aula02-etl-backup-jornada-dados/*"
+            ]
