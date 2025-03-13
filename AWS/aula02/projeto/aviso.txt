@@ -6,3 +6,8 @@ nome-do-bucket/*
                 "arn:aws:s3:::aula02-etl-backup-jornada-dados",
                 "arn:aws:s3:::aula02-etl-backup-jornada-dados/*"
             ]
+
+>>>>>
+gerar gitignore em
+https://www.toptal.com/developers/gitignore
+digita python
