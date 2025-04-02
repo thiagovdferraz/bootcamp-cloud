@@ -1,3 +1,3 @@
 # Bootcamp Cloud
 
-Todas as subpastas possui um arquivo ´readme´.
+Todas as subpastas possui um arquivo `readme`.
