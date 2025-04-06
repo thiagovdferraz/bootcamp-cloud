@@ -4,7 +4,7 @@ import boto3
 sqs = boto3.client('sqs')
 
 # URL da fila SQS
-queue_url = 'https://sqs.us-east-1.amazonaws.com/148761673709/minha-fila-standard'
+queue_url = 'https://sqs.us-west-2.amazonaws.com/242172718396/minha-fila-aula13-sqs'
 
 # Recebendo mensagens da fila
 response = sqs.receive_message(
