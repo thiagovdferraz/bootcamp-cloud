@@ -1,0 +1,1 @@
+entrar no site da aws e baixar o cli da aws
