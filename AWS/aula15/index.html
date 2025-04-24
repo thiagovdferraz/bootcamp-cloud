@@ -59,7 +59,7 @@
                 redirect: 'follow'
             };
 
-            fetch("https://ldv9xs3t2a.execute-api.us-west-2.amazonaws.com/prod/", requestOptions)
+            fetch("https://apiendpoint.execute-api.us-west-2.amazonaws.com/prod/", requestOptions)
             .then(response => response.text())
             .then(result => alert("Número sorteado: " + JSON.parse(JSON.parse(result).body).numeroSorteado))
             .catch(error => console.log('error', error));
