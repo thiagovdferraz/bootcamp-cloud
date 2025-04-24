@@ -60,29 +60,9 @@
             };
 
             fetch("https://ldv9xs3t2a.execute-api.us-west-2.amazonaws.com/prod/", requestOptions)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! Status: ${response.status}`);
-                    }
-                    return response.text();
-                })
-                .then(result => {
-                    try {
-                        const parsedResult = JSON.parse(result);
-                        if (parsedResult && parsedResult.numeroSorteado !== undefined) {
-                            alert("Número sorteado: " + parsedResult.numeroSorteado);
-                        } else {
-                            alert("Erro: Resposta da API não contém 'numeroSorteado'.");
-                        }
-                    } catch (e) {
-                        console.error("Erro ao parsear o JSON:", e);
-                        alert("Erro: Resposta inválida da API.");
-                 }
-            })
-            .catch(error => {
-                console.error('Erro na requisição:', error);
-                alert("Erro ao realizar o sorteio. Verifique o console para mais detalhes.");
-            });
+            .then(response => response.text())
+            .then(result => alert("Número sorteado: " + JSON.parse(JSON.parse(result).body).numeroSorteado))
+            .catch(error => console.log('error', error));
         }
     </script>
 </head>
